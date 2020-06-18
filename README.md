@@ -7,6 +7,10 @@ yarn install
 npm install bootstrap-vue
 ```
 
+### Lints and fixes files
+```
+yarn lint
+```
 ### Compiles and hot-reloads for development
 ```
 yarn serve
@@ -30,7 +34,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 6. 역방향 데이터바인딩 (input 등에 글자를 넣으면 자바스크립트 데이터가 바뀐다능)
 
 
-#### what To learn 1
+#### what To learn 2
 1. 간단한 컴포넌트만들기
 2. for 반복문
 3. Props를 이용한 디스플레이 - 정렬기능
