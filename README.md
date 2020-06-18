@@ -19,7 +19,18 @@ yarn serve
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-## To do list
+## Home components
+- [ ] header
+- [ ] filter
+- [ ] list 
+
+## Detail components
+- [ ] img
+- [ ] detail information
+- [ ] price / input 
+
+
+#### To do list
 - [ ] 뷰를 이용한 상품데이터 진열
 - [ ] 가격정렬, 필터 버튼
 - [ ] 상세페이지 역할의 모달창 UI 만들기 가격슬라이더 UI기능
