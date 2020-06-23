@@ -1,4 +1,4 @@
-#header__tt {
+#main #title {
     font-size: 40px;
     font-weight: 100;
 }
@@ -16,6 +16,17 @@
     background-color: #01cbae;
     border: none;
 }
+
+#navbar #nav-right .search {
+    background-color: #01cbae;
+    border: none;
+}
+
+#navbar #nav-right .search:hover {
+    background-color: #06564a;
+    border: none;
+}
+
 
 #filter {
     width: 5%;
@@ -39,6 +50,11 @@
 
 #products img {
     width: 100%;
+}
+
+#footer {
+    margin: 0;
+    margin-top: 20px;
 }
 
 @media(max-width:600px) {

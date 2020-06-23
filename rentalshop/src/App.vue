@@ -1,8 +1,10 @@
 <template>
-  <div id="app">
-    <header id="header">
+<div id="app">
+  <header>
+    <Navibar />
+    <div id="main">
       <b-jumbotron bg-variant="info" text-variant="white" class="rounded-0">
-        <p id="header__tt">
+        <p id="title">
           <strong>바로홈으로</strong> 바로구하자
         </p>
         <hr class="my-4" />
@@ -11,7 +13,9 @@
           container.
         </p>
       </b-jumbotron>
-    </header>
+    </div>
+  </header>
+  <body>
     <div id="wrap">
       <div id="filter">
         <ul class="list-group">
@@ -24,12 +28,16 @@
         <Products v-for="(room,i) in rooms" v-bind:key="i" v-bind:room="rooms[i]"></Products>
       </div>
     </div>
-  </div>
+  </body>
+  <Footer />
+</div>
 </template>
 
 <script>
-import Products from "./components/Products.vue";
 import Data from "./assets/data.js";
+import Products from "./components/Products.vue";
+import Navibar from "./components/Navibar.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "room",
@@ -39,7 +47,9 @@ export default {
     };
   },
   components: {
-    Products: Products
+    Products,
+    Navibar,
+    Footer
   }
 };
 </script>
