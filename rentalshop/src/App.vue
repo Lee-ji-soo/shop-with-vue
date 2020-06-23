@@ -21,42 +21,26 @@
         </ul>
       </div>
       <div id="products">
-        <div class="list__box">
-          <img v-bind:src="room[0].img" />
-          <h5>{{room[0].title}}</h5>
-          <p>{{room[0].price}}</p>
-        </div>
-        <div class="list__box">
-          <img v-bind:src="room[0].img" />
-          <h5>{{room[0].title}}</h5>
-          <p>{{room[0].price}}</p>
-        </div>
-        <div class="list__box">
-          <img v-bind:src="room[0].img" />
-          <h5>{{room[0].title}}</h5>
-          <p>{{room[0].price}}</p>
-        </div>
-        <div class="list__box">
-          <img v-bind:src="room[0].img" />
-          <h5>{{room[0].title}}</h5>
-          <p>{{room[0].price}}</p>
-        </div>
+        <Products v-for="(room,i) in rooms" v-bind:key="i" v-bind:room="rooms[i]"></Products>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Products from "./components/Products.vue";
 import Data from "./assets/data.js";
 
 export default {
   name: "room",
   data() {
     return {
-      room: Data
+      rooms: Data
     };
   },
-  components: {}
+  components: {
+    Products: Products
+  }
 };
 </script>
 
